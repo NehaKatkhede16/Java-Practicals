@@ -1,0 +1,34 @@
+<!-- 10)	Write a JavaScript function to insert a string within a string at a particular position(4) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript" lang="javascript">
+                // function insert(){
+                // let string = 'JScript';
+                // let result = string.substring(0, 1) + 'ava' + string.substring(1);
+                // document.write("The resultant string becomes:", result);
+                // }
+
+                // insert();
+                function insertString(originalString, stringToInsert, position) {
+             return originalString.slice(0, position) + stringToInsert + originalString.slice(position);
+}
+                const originalString = "Hello, world!";
+                const stringToInsert = "beautiful ";
+                const position = 7;
+
+                const newString = insertString(originalString, stringToInsert, position);
+                document.write(newString); // Output: "Hello, beautiful world!"
+
+                </script>
+
+</script>
+    </script>
+</body>
+</html>
